@@ -57,7 +57,7 @@ function getWeather () {
             .then(function(data) {
               // save data to global parameter to use in display function
               weatherDATA = data;
-
+            console.log(weatherDATA)
               // moon phases, sunrise, susnset by day
             //   console.log("Moon Phase " + data.forecast.forecastday[0].astro.moon_phase);
             //   console.log("Moonrise time "+ data.forecast.forecastday[0].astro.moonrise);
