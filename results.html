@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a94e07a810.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/nouislider.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="relative">
+        <div class="relative h-160">
+            <div class="overlay h-full w-full absolute top-0 left-0 z-index-50 bg-black bg-opacity-60"></div>
+            <video class="hero-block-video" playsinline="" autoplay="" loop="" muted="">
+                <source src="assets/img/Night Sky - 31569.mp4" type="video/mp4">
+            </video>
+            <header id="showcase">
+                <div class="showcase-content">
+                    <h1 class="l-heading">
+                        Stellar Sights
+                    </h1>
+                    <p class="lead">
+                        See if various cosmic bodies are visible in your area!
+                    </p>
+                </div>
+            </header>
+        </div>
+
+        <div class="container center-align">
+            <a href='./index.html'><button class="btn waves-effect waves-light" name="action">Go Back to choose another
+                    location</button></a>
+            <div class="row">
+                <div>
+                    <p class="lead">Use slider to change the time on the clock</p>
+                    <p id="currentDay" class="lead"></p>
+                </div>
+            </div>
+            <!--Insert slider-->
+
+
+            <form action="#" id="time-change">
+                <p class="range-field">
+                    <input type="range" id="timeChange" value="0" min="0" max="72" />
+                </p>
+            </form>
+
+
+            <div class="row">
+                <div class="col s12 section visibility">
+                    <h3 class="bannerText"></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s3 section weather"></div>
+                <div class="col s9 section available-bodies">
+
+                    <!-- <div class="card horizontal">
+                      <div class="card-image">
+                        <img src="assets/img/planets/Mars.png">
+                      </div>
+                      <div class="card-content">
+                          <p>I am a very simple card. I am good at containing small bits of information.</p>
+                      </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+
+        <footer id="main-footer" class="bg-dark text-center py-1">
+            <div class="content">
+                <p>Copyright &copy; 2022, Stellar Sights, All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="js/Jscript.js"></script>
+        <!-- <script src="assets/js/app.js"></script> -->
+</body>
+
+</html>
