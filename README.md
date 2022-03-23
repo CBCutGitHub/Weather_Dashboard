@@ -1,4 +1,4 @@
-# Keeping Informed 5-Day Weather_Dashboard
+# Keeping Informed 5-Day Weather Dashboard
 06 Server-Side APIs: Weather Dashboard
 Your Task
 Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
@@ -48,10 +48,16 @@ THEN I am again presented with current and future conditions for that city
 Mock-Up
 The following image shows the web application's appearance and functionality:
 
+<<<<<<< HEAD
 The following image shows the web application's appearance and functionality:
 
 ![WeatherBoard](https://user-images.githubusercontent.com/95545346/159547439-012068af-0b44-47b2-b773-c09a0c89c821.PNG)
 
+=======
+![WeatherBoard](https://user-images.githubusercontent.com/95545346/159547439-012068af-0b44-47b2-b773-c09a0c89c821.PNG)
+
+
+>>>>>>> 1f11013c8abbef2f31d056f0810dcdc8c97a7627
 The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.
 
 Grading Requirements
@@ -146,4 +152,8 @@ The URL of the functional, deployed application.
 
 The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 
+<<<<<<< HEAD
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+=======
+© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+>>>>>>> 1f11013c8abbef2f31d056f0810dcdc8c97a7627
