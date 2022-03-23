@@ -154,7 +154,10 @@ function weatherDATAdisplay (){
 // end of weatherDATAdisplay
 function weatherforecastDisplay(){
     for(var i = 0; i< weatherDATA.forecast.forecastday.length; i++){
-        
+      console.log (weatherDATA.forecast.forecastday[i])  
+var forecastRow = document.createElement("ul")
+var date = document.createElement("p")
+date.textContent = moment.unix(weatherDATA.forecast.forecastday[i].date_epoch).format("MMMM Do YYYY")
     }
 }
 function weathersetAtributes(){
