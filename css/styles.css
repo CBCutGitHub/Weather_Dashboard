@@ -92,6 +92,18 @@ img, video{
     
 }
 
+.forecastCard{
+    background-color: rgb(180, 220, 221);
+    color: rgba(252, 244, 244, 0.924);
+    border: #1683A1 solid 5px;
+    width: 200px;
+    margin: 20px
+}
+.forecastRow {
+    display: flex;
+    flex-direction: row
+}
+
 
 video {
     object-fit: contain;

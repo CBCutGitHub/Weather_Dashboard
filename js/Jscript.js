@@ -7,7 +7,7 @@ const astroApiSecret = '6f14831c8a735ba5d7c78419de6f4bd9a270586412858868719ccdb6
 const astroApiId = '1ef02872-a5fd-4790-bebe-b572308c9bb6'
 const hash = btoa(`${astroApiId}:${astroApiSecret}`);
 
-let startDate = moment().format("YYYY-MM-DD, 00:00:00")
+let startDate = moment().format("YYYY-MM-DD, 23:59:59")
 let endDate = moment().add(3, 'days').format("YYYY-MM-DD, 23:59:59")
 let fromDate = moment(startDate).format('YYYY-MM-DD')
 let titleDate = moment(startDate).format('dddd, MMM Do YYYY')
@@ -15,7 +15,7 @@ let toDate = moment(endDate).format("YYYY-MM-DD")
 let time = moment(startDate).format('HH:mm:ss')
 let titleTime = moment(startDate).format('LT')
 document.querySelector('#currentDay').textContent = `${titleDate}, ${titleTime}`
-let forecasting = document.querySelector("#3dayForcast")
+let forecasting = document.querySelector("#threedayForecast")
 let weathDate = 0
 let weathTime = moment(startDate).format('H')
 
@@ -67,6 +67,8 @@ function getWeather () {
               
               // display weather on results page
               weatherDATAdisplay();
+
+              weatherforecastDisplay()
           });
         } else {
         //   console.log("error");
@@ -153,12 +155,29 @@ function weatherDATAdisplay (){
 }
 // end of weatherDATAdisplay
 function weatherforecastDisplay(){
-    for(var i = 0; i< weatherDATA.forecast.forecastday.length; i++){
+    for(var i = 0; i< weatherDATA.forecast.forecastday.length+1; i++){
       console.log (weatherDATA.forecast.forecastday[i])  
 var forecastRow = document.createElement("ul")
 var date = document.createElement("p")
-date.textContent = moment.unix(weatherDATA.forecast.forecastday[i].date_epoch).format("MMMM Do YYYY")
+date.textContent = moment.unix(weatherDATA.forecast.forecastday[i].hour[weatherTIME].time_epoch).format("MMMM Do YYYY")
+var temp = document.createElement("p")
+temp.textContent = "Temperature: " + weatherDATA.forecast.forecastday[i].hour[weatherTIME].temp_f;
+// display wind speed
+var wind = document.createElement("p")
+wind.textContent = "Wind Speed: " + weatherDATA.forecast.forecastday[i].hour[weatherTIME].wind_mph;
+// display humidity
+var humidity = document.createElement("p")
+humidity.textContent = "Humidity: " +weatherDATA.forecast.forecastday[i].hour[weatherTIME].humidity;
+
+forecastRow.append(date, temp, wind, humidity)
+
+forecastRow.setAttribute("class", "forecastCard weather")
+
+forecasting.append(forecastRow)
+
     }
+    // display temperature
+ 
 }
 function weathersetAtributes(){
   // set weather atributes
