@@ -15,7 +15,7 @@ let toDate = moment(endDate).format("YYYY-MM-DD")
 let time = moment(startDate).format('HH:mm:ss')
 let titleTime = moment(startDate).format('LT')
 document.querySelector('#currentDay').textContent = `${titleDate}, ${titleTime}`
-
+let forecasting = document.querySelector("#3dayForcast")
 let weathDate = 0
 let weathTime = moment(startDate).format('H')
 
@@ -152,7 +152,11 @@ function weatherDATAdisplay (){
   weathersetAtributes();
 }
 // end of weatherDATAdisplay
-
+function weatherforecastDisplay(){
+    for(var i = 0; i< weatherDATA.forecast.forecastday.length; i++){
+        
+    }
+}
 function weathersetAtributes(){
   // set weather atributes
     iconEl.setAttribute("style", "width:100% ");
