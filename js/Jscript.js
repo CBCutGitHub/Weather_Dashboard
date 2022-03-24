@@ -25,7 +25,7 @@ const generateWeather =()=>{
 //** start of get weather function
 var weatherAPIKEY =  '27bbc4e6b84a47d1b13160933221101' ;
 
-// this parameter will change, depending to input from user 
+// parameter designed to change based on user input 
 // var weatherLOCNUM = '30.542747,-97.550011' ;
 var weatherLOCNUM;
 
@@ -80,7 +80,7 @@ function getWeather () {
 getWeather(); 
 
 
-// these variables will change depeending on user input/slider
+// these variables will change depending on user input/slider
 var weatherDAY = weathDate; //present = 0, one day in future = 1, two day in future =2
 var weatherTIME = weathTime; // military time 0 - 23
 

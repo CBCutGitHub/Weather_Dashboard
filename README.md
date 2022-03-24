@@ -1,159 +1,31 @@
-# Keeping Informed 5-Day Weather Dashboard
-06 Server-Side APIs: Weather Dashboard
-Your Task
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+# Stay Informed 3-Day Weather Dashboard
 
-Use the OpenWeather One Call API to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use localStorage to store any persistent data. For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys.
+## Summary
 
-User Story
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-Mock-Up
-The following image shows the web application's appearance and functionality:
-06 Server-Side APIs: Weather Dashboard
-Your Task
-Third-party APIs allow developers to access their data and functionality by making requests with specific parameters to a URL. Developers are often tasked with retrieving data from another application's API and using it in the context of their own. Your challenge is to build a weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
+The application is designed to provide informational data on weather conditions based on user input. The app allows a user to enter a city or zipcode for the area they would like to obtain weather conditions. Whether you are making plans to have outdoor events or planning to travel, this application makes it conveniently possible to stay informed on weather conditions over a 3-day range at a time. 
 
-Use the OpenWeather One Call API to retrieve weather data for cities. Read through the documentation for setup and usage instructions. You will use localStorage to store any persistent data. For more information on how to work with the OpenWeather API, refer to the Full-Stack Blog on how to use API keys.
+## Application
+This application is a simple tool which allows a user to stay informed on weather condition by displaying an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index. 
 
-User Story
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-Acceptance Criteria
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-Mock-Up
-The following image shows the web application's appearance and functionality:
+Stay Informed 3-Day Weather Dashboard is built to be viewed in a browser and features dynamically updated HTML and CSS. Weather conditions data is provided via Third-party APIs by making requests with specific parameters to a URL. This application uses the OpenWeather One Call API to retrieve weather data based on the user's input on selected cities or zipcodes.
 
-<<<<<<< HEAD
-The following image shows the web application's appearance and functionality:
+## Selected City or Zipcode Storage
+User's selected cities or zipcodes searches are stored and conveniently visible up to 5 selections. The selections are replaced as new entries are entered (first-in first-out as the list grows).
 
-![WeatherBoard](https://user-images.githubusercontent.com/95545346/159547439-012068af-0b44-47b2-b773-c09a0c89c821.PNG)
+## Application Appearance and Functionality
 
-=======
-![WeatherBoard](https://user-images.githubusercontent.com/95545346/159547439-012068af-0b44-47b2-b773-c09a0c89c821.PNG)
+The following images shows the web application's appearance and functionality:
+
+Input Screen
 
 
->>>>>>> 1f11013c8abbef2f31d056f0810dcdc8c97a7627
-The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.
 
-Grading Requirements
-This homework is graded based on the following criteria:
+Search Results Screen
 
-Technical Acceptance Criteria: 40%
-Satisfies all of the above acceptance criteria plus the following:
 
-Uses the OpenWeather API to retrieve weather data.
 
-Uses localStorage to store persistent data.
 
-Deployment: 32%
-Application deployed at live URL.
 
-Application loads with no errors.
 
-Application GitHub URL submitted.
-
-GitHub repository that contains application code.
-
-Application Quality: 15%
-Application user experience is intuitive and easy to navigate.
-
-Application user interface style is clean and polished.
-
-Application resembles the mock-up functionality provided in the homework instructions.
-
-Repository Quality: 13%
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-Review
-You are required to submit BOTH of the following for review:
-
-The URL of the functional, deployed application.
-
-The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-
-The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.
-
-Grading Requirements
-This homework is graded based on the following criteria:
-
-Technical Acceptance Criteria: 40%
-Satisfies all of the above acceptance criteria plus the following:
-
-Uses the OpenWeather API to retrieve weather data.
-
-Uses localStorage to store persistent data.
-
-Deployment: 32%
-Application deployed at live URL.
-
-Application loads with no errors.
-
-Application GitHub URL submitted.
-
-GitHub repository that contains application code.
-
-Application Quality: 15%
-Application user experience is intuitive and easy to navigate.
-
-Application user interface style is clean and polished.
-
-Application resembles the mock-up functionality provided in the homework instructions.
-
-Repository Quality: 13%
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains quality readme file with description, screenshot, and link to deployed application.
-
-Review
-You are required to submit BOTH of the following for review:
-
-The URL of the functional, deployed application.
-
-The URL of the GitHub repository. Give the repository a unique name and include a readme describing the project.
-
-<<<<<<< HEAD
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
-=======
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
->>>>>>> 1f11013c8abbef2f31d056f0810dcdc8c97a7627

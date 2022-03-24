@@ -1,78 +1,67 @@
 
-// //////////////////
 // //variables changed in geocode function to be used in astro api and weather api
 let latitude
 let longitude
 let resultPage = './results.html'
-// //////////////////
 
-///////////////////////////////////////////////
 //pull from MapBox API for latitude and longitude
 
 let address
 let inputAddress = document.querySelector('#location-input')
 inputAddress.addEventListener('submit', (e)=>{
-   e.preventDefault()
-   if(e.target.elements[0].value !== ''){
-   console.log(e.target.elements[0].value)
-   address = e.target.elements[0].value
-   e.target.elements[0].value = ''
-   geocode(address)
-   createdLocation(address)
-   generateSavedLocation()
-   }
-  
-   
-
- })
+  e.preventDefault()
+  if(e.target.elements[0].value !== ''){
+  console.log(e.target.elements[0].value)
+  address = e.target.elements[0].value
+  e.target.elements[0].value = ''
+  geocode(address)
+  createdLocation(address)
+  generateSavedLocation()
+  }
   
 
-   const geocode = async(address)=>{
-     const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=pk.eyJ1IjoiY3B0cGxhbmV0IiwiYSI6ImNreWFiNXA5OTAzcXkydnA5NWs1NXY1OWwifQ.jMJiAvDc9I0KPpUfg18U8g`)
-     if(response.status === 200){
-       const data = await response.json()
-       console.log(data)
-       console.log(data.features[0].center[0])
-       console.log(data.features[0].center[1])
-       longitude = data.features[0].center[0]
-       latitude = data.features[0].center[1]
-      
-
-     }
-     document.location = `${resultPage}?latitude=${latitude}&longitude=${longitude}`
-     
-    
-   }
+})
 
 
+const geocode = async (address) => {
+  const response = await fetch(`https://api.mapbox.com/geocoding/v5/mapbox.places/${address}.json?access_token=pk.eyJ1IjoiY3B0cGxhbmV0IiwiYSI6ImNreWFiNXA5OTAzcXkydnA5NWs1NXY1OWwifQ.jMJiAvDc9I0KPpUfg18U8g`)
+  if (response.status === 200) {
+    const data = await response.json()
+    console.log(data)
+    console.log(data.features[0].center[0])
+    console.log(data.features[0].center[1])
+    longitude = data.features[0].center[0]
+    latitude = data.features[0].center[1]
+
+  }
+  document.location = `${resultPage}?latitude=${latitude}&longitude=${longitude}`
 
 
-  
-  
+}
 
-   let locationSaved = []
-  
-   const createdLocation = (input)=>{
-     if(!locationSaved.includes(input)){
-       loadLocation()
-       if(locationSaved.length === 5){
-         locationSaved.shift()
-       }
-       locationSaved.push(input)
-       saveLocation()
-     } 
-   }
-  
-  
-   const saveLocation = ()=>{
-     localStorage.setItem('location', JSON.stringify(locationSaved))
-   }
-  
-  
-  
-  
-   const collection = document.querySelector('.collection')
- 
+let locationSaved = []
+
+const createdLocation = (input) => {
+  if (!locationSaved.includes(input)) {
+    loadLocation()
+    if (locationSaved.length === 5) {
+      locationSaved.shift()
+    }
+    locationSaved.push(input)
+    saveLocation()
+  }
+}
+
+
+const saveLocation = () => {
+  localStorage.setItem('location', JSON.stringify(locationSaved))
+}
+
+
+
+
+const collection = document.querySelector('.collection')
+
 
 
     const loadLocation = ()=>{
@@ -112,11 +101,7 @@ inputAddress.addEventListener('submit', (e)=>{
       }
     }
     generateSavedLocation()
- ///////////////////////////////////////////     
-
-
-
-
+  
 
 
 // //js slider code
@@ -140,7 +125,7 @@ inputAddress.addEventListener('submit', (e)=>{
 //       to: function(value) {
 //               return parseInt(value);
 //           }
-   
+  
 //       }
 //     });
 

@@ -74,8 +74,11 @@ input {
 
 /* div {
     display: block;
-} */
+}            
 
+
+*/
+/* Including video is for future development.
 .hero-block-video {
     -o-object-fit: cover;
     object-fit: cover;
@@ -90,7 +93,7 @@ img, video {
 img, video{
     display: block;
     
-}
+} */
 
 .forecastCard{
     background-color: rgb(180, 220, 221);
@@ -105,9 +108,6 @@ img, video{
 }
 
 
-video {
-    object-fit: contain;
-}
 #showcase .showcase-content{
     display: flex;
     flex-direction: column;
