@@ -18,14 +18,18 @@ The following images shows the web application's appearance and functionality:
 
 Input Screen
 
-
+![StayInformedWB1](https://user-images.githubusercontent.com/95545346/159876146-879ad9e1-3325-4f13-bc22-a1768710ef06.PNG)
 
 Search Results Screen
 
+![StayInformedWB2](https://user-images.githubusercontent.com/95545346/159876277-abbc5374-bf11-4e5c-9b76-c1997bc26080.PNG)
 
+## References and Research Sources
 
-
-
-
+Contributor, Martha Dempsey, Stellar-Sights Project 
+w3schools.com: https://w3schools.com 
+MDN: https://developer.mozilla.org/en-US/
+wwww.fontawesome.com: https://kit.fontawesome.com/a94e07a810.js
+www.cloudflare.com
 
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
